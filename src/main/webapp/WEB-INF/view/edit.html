@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+<h1>Edit Customer</h1>
+<form method="post">
+  <table border="1">
+      <input type="hidden" th:field="*{c.id}" placeholder="Enter ID">
+    <tr>
+      <td>Name</td>
+      <td><input type="text" th:field="*{c.name}" placeholder="Enter Name"></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><input type="text" th:field="*{c.email}" placeholder="Enter Email">
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td><input type="text" th:field="*{c.address}" placeholder="Enter Address"></td>
+    </tr>
+  </table>
+  <button type="submit">Edit</button>
+</form>
+</body>
+</html>
